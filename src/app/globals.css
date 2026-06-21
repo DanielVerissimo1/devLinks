@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --text-color: #000000;
+  --stroke-color: rgb(0 0 0 / 50%);
+  --surface-color: rgb(0 0 0 / 5%);
+  --surface-hover-color: rgb(0 0 0 / 2%);
+  --highlight-color: rgb(0 0 0 / 10%);
+  --toggle-handle-color: #ffffff;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+  --text-color: #ffffff;
+  --stroke-color: rgb(255 255 255 / 50%);
+  --surface-color: rgb(255 255 255 / 10%);
+  --surface-hover-color: rgb(255 255 255 / 5%);
+  --highlight-color: rgb(255 255 255 / 20%);
+  --toggle-handle-color: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-text: var(--text-color);
+  --color-stroke: var(--stroke-color);
+  --color-surface: var(--surface-color);
+  --color-surface-hover: var(--surface-hover-color);
+  --color-highlight: var(--highlight-color);
+  --color-toggle-handle: var(--toggle-handle-color);
+
+  --font-sans: "Inter", Arial, Helvetica, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  --text-sm: 14px;
+  --text-sm--line-height: 24px;
+  --text-md: 16px;
+  --text-md--line-height: 24px;
+
+  --spacing-avatar: 112px;
+  --spacing-button: 160px;
+  --spacing-switch: 64px;
+  --spacing-social: 40px;
+  --spacing-icon: 24px;
+
+  --radius-link: 8px;
+  --radius-pill: 9999px;
+
+  --shadow-switch-dark: 0 2px 8px rgb(0 0 0 / 25%);
+  --shadow-switch-light: 0 2px 4px rgb(0 0 0 / 10%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.devlinks-background {
+  background-image: url("/assets/figma/bg-mobile-light.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.dark .devlinks-background {
+  background-image: url("/assets/figma/bg-mobile-dark.png");
+}
+
+@media (min-width: 768px) {
+  .devlinks-background {
+    background-image: url("/assets/figma/bg-desktop-light.png");
+  }
+
+  .dark .devlinks-background {
+    background-image: url("/assets/figma/bg-desktop-dark.png");
+  }
+}
