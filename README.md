@@ -1,7 +1,7 @@
 <h1 align="center">
   <img width="64" alt="Logo do DevLinks" src="src/app/icon.png" />
   <br />
-  <p>Daniel Verissimo — DevLinks</p>
+  <p>DevLinks</p>
   <p>
     <img src="https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js 16">
     <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript 5">
@@ -9,7 +9,7 @@
   </p>
 </h1>
 
-**Daniel Verissimo — DevLinks** é uma página pessoal de links desenvolvida com **Next.js**, **React**, **TypeScript** e **Tailwind CSS**. A aplicação centraliza o acesso ao portfólio, currículo, contato e redes sociais em uma interface responsiva com temas claro e escuro.
+**DevLinks** é uma página pessoal de links desenvolvida com **Next.js**, **React**, **TypeScript** e **Tailwind CSS**. A aplicação centraliza o acesso ao portfólio, currículo, contato e redes sociais em uma interface responsiva com temas claro e escuro.
 
 ---
 
