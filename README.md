@@ -76,10 +76,10 @@
 
 ```bash
 # Clone o repositório
-git clone URL_DO_REPOSITORIO
+git clone [URL_DO_REPOSITORIO](https://github.com/DanielVerissimo1/devLinks.git)
 
 # Entre na pasta do projeto
-cd Links
+cd devLinks
 
 # Instale as dependências
 npm install
@@ -111,7 +111,7 @@ npm start
 ## 📁 Arquitetura do projeto
 
 ```text
-Links/
+devLinks/
 ├── public/
 │   ├── assets/
 │   │   ├── figma/                   # Avatares e fundos dos temas
