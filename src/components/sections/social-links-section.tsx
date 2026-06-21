@@ -39,6 +39,7 @@ export function SocialLinksSection() {
           <Image
             alt=""
             aria-hidden="true"
+            className="invert dark:invert-0"
             height={24}
             src={link.iconSrc}
             width={24}
